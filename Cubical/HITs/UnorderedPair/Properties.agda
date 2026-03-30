@@ -3,6 +3,7 @@ module Cubical.HITs.UnorderedPair.Properties where
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Function
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 open import Cubical.Data.Sigma
 open import Cubical.HITs.SetCoequalizer as SQ
 

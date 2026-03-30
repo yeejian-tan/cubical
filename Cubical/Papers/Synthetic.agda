@@ -75,7 +75,7 @@ double (loop i) = (loop ∙ loop) i
 -- 2.4 Glue Types and Univalence
 open Equiv using (idEquiv) public
 open CoreGlue using (Glue) public
-open Univalence using (ua) public
+open Univalence using (ua ; isoToPath) public
 
 --------------------------------------------------------------------------------
 -- 3.  The Circle and Torus
@@ -102,8 +102,7 @@ _ = refl
 open S1 renaming (intLoop to loopn) public
 open S1 renaming (windingℤLoop to winding-loopn) public
 open S1 using (encode ; decode ; decodeEncode ; ΩS¹≡ℤ) public
-open Isomorphism using (isoToPath ; iso) public
-
+open Isomorphism using (iso) public
 -- Notation of the paper, current notation under ΩS¹≡Int
 ΩS¹≡Int' : ΩS¹ ≡ Int
 ΩS¹≡Int' = isoToPath (iso winding loopn

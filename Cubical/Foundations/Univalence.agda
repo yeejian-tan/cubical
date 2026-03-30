@@ -9,6 +9,7 @@ various consequences of univalence
 - Equivalence induction ([EquivJ], [elimEquiv])
 - Univalence theorem ([univalence])
 - The computation rule for ua ([uaβ])
+- isoToPath : any isomorphism gives a path
 - Isomorphism induction ([elimIso])
 
 -}
@@ -210,6 +211,18 @@ uaβ e x = transportRefl (equivFun e x)
 
 ~uaβ : {A B : Type ℓ} (e : A ≃ B) (x : B) → transport (sym (ua e)) x ≡ invEq e x
 ~uaβ e x = cong (invEq e) (transportRefl x)
+
+-- Any isomorphism gives a path (using ua)
+isoToPath : ∀ {A B : Type ℓ} → Iso A B → A ≡ B
+isoToPath f = ua (isoToEquiv f)
+
+transportIsoToPath : ∀ {A B : Type ℓ} (f : Iso A B) (x : A)
+                   → transport (isoToPath f) x ≡ Iso.fun f x
+transportIsoToPath f = uaβ (isoToEquiv f)
+
+transportIsoToPath⁻ : ∀ {A B : Type ℓ} (f : Iso A B) (x : B)
+                    → transport (sym (isoToPath f)) x ≡ Iso.inv f x
+transportIsoToPath⁻ f = ~uaβ (isoToEquiv f)
 
 uaη : ∀ {A B : Type ℓ} → (P : A ≡ B) → ua (pathToEquiv P) ≡ P
 uaη {A = A} {B = B} P i j = Glue B {φ = φ} sides where

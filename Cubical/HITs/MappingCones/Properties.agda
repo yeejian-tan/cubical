@@ -4,6 +4,7 @@ module Cubical.HITs.MappingCones.Properties where
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Function
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 
 open import Cubical.Data.Unit
 open import Cubical.Data.Sum

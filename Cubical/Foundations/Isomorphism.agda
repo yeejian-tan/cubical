@@ -9,8 +9,6 @@ Theory about isomorphisms
 -}
 module Cubical.Foundations.Isomorphism where
 
-open import Cubical.Core.Glue
-
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.GroupoidLaws
 open import Cubical.Foundations.Function
@@ -116,11 +114,6 @@ isIsoToIso fIsIso .Iso.ret = fIsIso .snd .snd
 
 isIsoToIsEquiv : {f : A → B} → isIso f → isEquiv f
 isIsoToIsEquiv fIsIso = isoToIsEquiv (isIsoToIso fIsIso)
-
-isoToPath : Iso A B → A ≡ B
-isoToPath {A = A} {B = B} f i =
-  Glue B (λ { (i = i0) → (A , isoToEquiv f)
-            ; (i = i1) → (B , idEquiv B) })
 
 open Iso
 
@@ -230,9 +223,3 @@ sec (Iso≡Set hA hB f g hfun hinv i) x j =
   isSet→isSet' hB (sec f x) (sec g x) (λ i → hfun (hinv x i) i) refl i j
 ret (Iso≡Set hA hB f g hfun hinv i) x j =
   isSet→isSet' hA (ret f x) (ret g x) (λ i → hinv (hfun x i) i) refl i j
-
-transportIsoToPath : (f : Iso A B) (x : A) → transport (isoToPath f) x ≡ f .fun x
-transportIsoToPath f x = transportRefl _
-
-transportIsoToPath⁻ : (f : Iso A B) (x : B) → transport (sym (isoToPath f)) x ≡ f .inv x
-transportIsoToPath⁻ f x = cong (f .inv) (transportRefl _)

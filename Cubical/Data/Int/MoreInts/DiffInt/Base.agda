@@ -4,6 +4,7 @@ open import Cubical.Foundations.Prelude
 
 open import Cubical.HITs.SetQuotients
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 
 open import Cubical.Data.Sigma
 open import Cubical.Data.Nat hiding (+-comm ; +-assoc) renaming (_+_ to _+ℕ_)

@@ -13,8 +13,8 @@ open import Cubical.Foundations.Path
 open import Cubical.Foundations.GroupoidLaws
 open import Cubical.Foundations.Function
 open import Cubical.Foundations.Transport hiding (pathToIso)
-open import Cubical.Foundations.Isomorphism using (isoToPath; Iso; isoToIsEquiv; iso)
-open import Cubical.Foundations.Univalence using (uaβ)
+open import Cubical.Foundations.Isomorphism using (Iso; isoToIsEquiv; iso)
+open import Cubical.Foundations.Univalence using (uaβ; isoToPath)
 open import Cubical.Foundations.Equiv.Base
 open import Cubical.Functions.FunExtEquiv
 open import Cubical.Functions.Surjection

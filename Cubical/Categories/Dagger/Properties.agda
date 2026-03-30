@@ -3,6 +3,7 @@ module Cubical.Categories.Dagger.Properties where
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Equiv
 open import Cubical.Foundations.Isomorphism as TypeIso using () renaming (Iso to TypeIso)
+open import Cubical.Foundations.Univalence
 open import Cubical.Foundations.Function
 open import Cubical.Data.Sigma
 open import Cubical.HITs.PropositionalTruncation as PT using (∥_∥₁; ∣_∣₁; isPropPropTrunc)

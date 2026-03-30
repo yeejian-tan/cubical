@@ -9,7 +9,7 @@
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Path
 open import Cubical.Foundations.Equiv
-open import Cubical.Foundations.Isomorphism using (isoToPath; isoToEquiv)
+open import Cubical.Foundations.Isomorphism using (isoToEquiv)
 open import Cubical.Foundations.GroupoidLaws
 open import Cubical.Foundations.Pointed
 open import Cubical.Foundations.Function

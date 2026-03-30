@@ -3,6 +3,7 @@ module Cubical.HITs.Join.Base where
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Equiv
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 open import Cubical.Foundations.Pointed.Base
 
 open import Cubical.HITs.S1

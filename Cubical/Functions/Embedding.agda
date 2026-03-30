@@ -11,7 +11,7 @@ open import Cubical.Foundations.Path
 open import Cubical.Foundations.Powerset
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Transport
-open import Cubical.Foundations.Univalence using (ua; univalence; pathToEquiv)
+open import Cubical.Foundations.Univalence using (ua; univalence; pathToEquiv; isoToPath)
 open import Cubical.Functions.Fibration
 
 open import Cubical.HITs.PropositionalTruncation.Base

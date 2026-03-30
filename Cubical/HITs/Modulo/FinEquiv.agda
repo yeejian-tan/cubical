@@ -2,6 +2,7 @@ module Cubical.HITs.Modulo.FinEquiv where
 
 open import Cubical.Foundations.Function
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 open import Cubical.Foundations.Prelude
 
 open import Cubical.Data.Fin

@@ -3,6 +3,7 @@ module Cubical.Experiments.NatMinusTwo.ToNatMinusOne where
 
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 
 open import Cubical.Data.NatMinusOne as ℕ₋₁ using (ℕ₋₁)
 open import Cubical.Experiments.NatMinusTwo.Base as ℕ₋₂ using (ℕ₋₂; -2+_)

@@ -13,6 +13,7 @@
 
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 
 open import Cubical.Data.Empty as ⊥
 open import Cubical.Data.Unit

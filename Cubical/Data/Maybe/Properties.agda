@@ -5,6 +5,7 @@ open import Cubical.Foundations.HLevels
 open import Cubical.Foundations.Equiv
 open import Cubical.Foundations.Function using (_∘_; idfun)
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 open import Cubical.Foundations.Pointed.Base using (Pointed; _→∙_; pt)
 open import Cubical.Foundations.Structure using (⟨_⟩)
 

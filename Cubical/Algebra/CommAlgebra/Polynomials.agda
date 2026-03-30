@@ -4,6 +4,7 @@ open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Function using (_$_; _∘_)
 open import Cubical.Foundations.Structure using (withOpaqueStr)
 open import Cubical.Foundations.Isomorphism using (isoFunInjective)
+open import Cubical.Foundations.Univalence
 
 open import Cubical.Data.Nat
 open import Cubical.Data.FinData

@@ -22,6 +22,7 @@ module Cubical.Experiments.HInt where
 open import Cubical.Foundations.Prelude
 open import Cubical.Foundations.Equiv
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 
 open import Cubical.Data.Int renaming (ℤ to Int; sucℤ to sucInt; predℤ to predInt; isSetℤ to isSetInt)
 open import Cubical.Data.Nat

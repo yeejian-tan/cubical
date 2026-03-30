@@ -7,6 +7,7 @@ module Cubical.Foundations.Cubes.HLevels where
 
 open import Cubical.Foundations.Prelude hiding (Cube)
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
 open import Cubical.Foundations.HLevels
 open import Cubical.Foundations.Cubes.Base
 open import Cubical.Foundations.Cubes.Subtypes

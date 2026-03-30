@@ -35,6 +35,7 @@ open import Cubical.Foundations.Equiv
   hiding   ( equivCtr
            ; equivIsEquiv )
 open import Cubical.Foundations.Isomorphism
+open import Cubical.Foundations.Univalence
   using ()
   renaming ( Iso to IsoPath
            ; iso to isoPath
