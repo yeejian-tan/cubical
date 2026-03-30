@@ -10,8 +10,8 @@ various consequences of univalence
 - Equivalence induction ([EquivJ], [elimEquiv])
 - Univalence theorem ([univalence])
 - The computation rule for ua ([uaβ])
-- isoToPath : any isomorphism gives a path
-- Isomorphism induction ([elimIso])
+- `isoToPath`: any isomorphism gives a path (using ua)
+- `transport-filler-ua`: filler square relating transport-filler and ua-gluePath
 
 -}
 module Cubical.Foundations.Univalence where
