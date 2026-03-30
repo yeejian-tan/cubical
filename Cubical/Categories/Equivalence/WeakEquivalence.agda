@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {-
 
 Weak Equivalence between Categories

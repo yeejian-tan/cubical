@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {-
 
 Freudenthal suspension theorem

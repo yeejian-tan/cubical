@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 module Cubical.Papers.Synthetic where
 
 -- Cubical synthetic homotopy theory

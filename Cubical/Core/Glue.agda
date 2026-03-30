@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {-
 
 This file contains:

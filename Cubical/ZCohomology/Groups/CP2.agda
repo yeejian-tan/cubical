@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {-# OPTIONS --lossy-unification #-}
 module Cubical.ZCohomology.Groups.CP2 where
 

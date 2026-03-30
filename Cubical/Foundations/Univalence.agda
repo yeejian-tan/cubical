@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {-
 
 Proof of the standard formulation of the univalence theorem and
@@ -223,6 +224,22 @@ transportIsoToPath f = uaβ (isoToEquiv f)
 transportIsoToPath⁻ : ∀ {A B : Type ℓ} (f : Iso A B) (x : B)
                     → transport (sym (isoToPath f)) x ≡ Iso.inv f x
 transportIsoToPath⁻ f = ~uaβ (isoToEquiv f)
+
+-- A filler square for transport along ua, relating transport-filler and ua-gluePath.
+-- Moved here (from Foundations.Transport) since the proof requires glue.
+transport-filler-ua : ∀ {A B : Type ℓ} (e : A ≃ B) (a : A)
+  → SquareP (λ _ i → ua e i)
+     (transport-filler (ua e) a)
+     (ua-gluePath e refl)
+     refl
+     (transportRefl (fst e a))
+transport-filler-ua {A = A} {B = B} (e , _) a j i =
+ let b = e a
+     tr = transportRefl b
+     z = tr (j ∧ ~ i)
+ in glue (λ { (i = i0) → a ; (i = i1) → tr j })
+      (hcomp (λ k → λ { (i = i0) → b ; (i = i1) → tr (j ∧ k) ; (j = i1) → tr (~ i ∨ k)  })
+      (hcomp (λ k → λ { (i = i0) → tr (j ∨ k) ; (i = i1) → z ; (j = i1) → z }) z))
 
 uaη : ∀ {A B : Type ℓ} → (P : A ≡ B) → ua (pathToEquiv P) ≡ P
 uaη {A = A} {B = B} P i j = Glue B {φ = φ} sides where

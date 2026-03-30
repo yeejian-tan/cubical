@@ -65,7 +65,7 @@ decode : (x : S¹) → helix x → base ≡ x
 decode base         = intLoop
 decode (loop i) y j =
   let n : ℤ
-      n = unglue (i ∨ ~ i) y
+      n = ua-unglue (isoToEquiv (iso sucℤ predℤ sucPred predSuc)) i y
   in hcomp (λ k → λ { (i = i0) → intLoop (predSuc y k) j
                     ; (i = i1) → intLoop y j
                     ; (j = i0) → base

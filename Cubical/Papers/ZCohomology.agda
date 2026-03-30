@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {-
 
 Please do not move this file. Changes should only be made if

@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {- Binary natural numbers (Anders Mörtberg, Jan. 2019)
 
 This file defines two representations of binary numbers. We prove that

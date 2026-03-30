@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 module Cubical.Experiments.ZCohomologyOld.KcompPrelims where
 
 open import Cubical.ZCohomology.Base

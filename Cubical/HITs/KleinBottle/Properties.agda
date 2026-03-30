@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {-
 
 Definition of the Klein bottle as a HIT

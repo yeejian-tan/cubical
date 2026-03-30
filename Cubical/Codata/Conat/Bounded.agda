@@ -1,4 +1,3 @@
-{-# OPTIONS --cubical --no-import-sorts --guardedness #-}
 module Cubical.Codata.Conat.Bounded where
 
 open import Cubical.Foundations.Equiv

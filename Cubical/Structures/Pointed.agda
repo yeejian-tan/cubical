@@ -36,7 +36,7 @@ pointed-sip A B = equivFun (pointedSIP A B) -- ≡ λ (e , p) i → ua e i , ua-
 
 pointed-sip-idEquiv∙ : (A : Pointed ℓ) → pointed-sip A A (idEquiv∙ A) ≡ refl
 fst (pointed-sip-idEquiv∙ A i j) = uaIdEquiv i j
-snd (pointed-sip-idEquiv∙ A i j) = glue {φ = i ∨ ~ j ∨ j} (λ _ → pt A) (pt A)
+snd (pointed-sip-idEquiv∙ A i j) = pt A
 
 {-
   The following terms have huge normal forms, so they are abstract to avoid

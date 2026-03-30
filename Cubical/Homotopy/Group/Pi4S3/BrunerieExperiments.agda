@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {-
 This code is adapted from examples/brunerie3.ctt on the pi4s3_nobug
 branch of cubicaltt It also contains a computation of a simplified

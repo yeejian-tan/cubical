@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 {-
 
 An induction principle for paths in a pushout, described in

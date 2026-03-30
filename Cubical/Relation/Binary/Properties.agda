@@ -1,3 +1,4 @@
+{-# OPTIONS --cubical #-}
 module Cubical.Relation.Binary.Properties where
 
 open import Cubical.Foundations.Prelude

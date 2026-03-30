@@ -53,10 +53,7 @@ Torus≡S¹×S¹ : Torus ≡ S¹ × S¹
 Torus≡S¹×S¹ = isoToPath (iso t2c c2t t2c-c2t c2t-t2c)
 
 point-path : PathP (λ i → Torus≡S¹×S¹ i) point (base , base)
-point-path i =
-  (glue (λ {
-   (i = i0) → point;
-   (i = i1) → (base , base) }) (base , base))
+point-path = ua-gluePath (isoToEquiv (iso t2c c2t t2c-c2t c2t-t2c)) refl
 
 Loop : {A : Type₀} (p : A) → Type₀
 Loop p = p ≡ p
